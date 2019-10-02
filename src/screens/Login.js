@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {View, StatusBar, Image, Text, Dimensions, TouchableOpacity} from "react-native";
 import Textfield from '../components/Textfield';
-import Button from '../components/Button'
+import Button from '../components/Button';
 
 const {width, height} = Dimensions.get('window');
 
-export default class Splash extends Component {
+export default class Login extends Component {
   render() {
     return (
       <View style={styles.container}>
