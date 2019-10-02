@@ -7,7 +7,7 @@ export default class Button extends Component {
   render() {
     return(
       <TouchableOpacity style={this.props.style}>
-          <Text style={{color: "#FFFFFF"}}>{this.props.buttonText}</Text>
+          <Text style={{color: "#FFFFFF", fontFamily: 'JosefinSans-Regular', fontSize: 20}}>{this.props.buttonText}</Text>
       </TouchableOpacity>
     )
   }

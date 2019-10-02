@@ -3,15 +3,17 @@ import Splash from '../screens/Splash';
 import Login from '../screens/Login';
 import ForgotPassword from '../screens/ForgotPassword';
 import Register from '../screens/Register';
+import GpsScreen from '../screens/GpsScreen';
 
 const AuthNavigator = createStackNavigator({
     Splash: Splash,
     Login: Login,
     Forgot: ForgotPassword,
-    Register: Register
+    Register: Register,
+    GpsScreen: GpsScreen
   },
   {
-    initialRouteName: 'Register',
+    initialRouteName: 'GpsScreen',
     headerMode: 'none'
   });
 

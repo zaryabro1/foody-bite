@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {View, StatusBar, Image, Text, Dimensions, TouchableOpacity} from "react-native";
 import Textfield from '../components/Textfield';
 import Button from '../components/Button';
+import LinearGradieant from 'react-native-linear-gradient';
 
 const {width, height} = Dimensions.get('window');
 
@@ -13,7 +14,7 @@ export default class Login extends Component {
         <Image
           source={require('../../assets/login.png')}
           style={styles.splashImage}/>
-        <View style={styles.mainView}/>
+        <LinearGradieant colors={['rgba(0, 0, 0, 0.3)', 'rgba(0, 0, 0, 1)']} style={styles.mainView}>
         <View style={styles.logo}>
           <Text style={styles.logoStyle}>Foodybites</Text>
 
@@ -44,10 +45,11 @@ export default class Login extends Component {
 
           }}/>
 
-          <TouchableOpacity style={{borderBottomWidth: 1, borderBottomColor: '#E4E4E4', marginTop: 30}}>
+          <TouchableOpacity style={styles.createNewAccount} onPress={() => {this.props.navigation.navigate('Register')}}>
             <Text style={{color: '#E4E4E4', fontFamily: 'JosefinSans-Regular'}}>Create New Account</Text>
           </TouchableOpacity>
         </View>
+        </LinearGradieant>
 
         {/*<View style={styles.logo}>*/}
 
@@ -74,13 +76,13 @@ const styles = {
   },
   mainView: {
     position: 'absolute',
-    backgroundColor: '#0C0C0C',
+    // backgroundColor: '#0C0C0C',
     top: 0,
     bottom: 0,
     left: 0,
     right: 0,
     zIndex: 1001,
-    opacity: 0.5
+    // opacity: 0.5
   },
   logo: {
     // flex: 1,
@@ -106,5 +108,10 @@ const styles = {
     // zIndex: 1003,
     fontFamily: 'JosefinSans-Bold',
 
+  },
+  createNewAccount: {
+    borderBottomWidth: 1,
+    borderBottomColor: '#E4E4E4',
+    marginTop: 30
   }
 };
