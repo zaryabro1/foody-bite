@@ -13,7 +13,7 @@ const AuthNavigator = createStackNavigator({
     GpsScreen: GpsScreen
   },
   {
-    initialRouteName: 'GpsScreen',
+    initialRouteName: 'Splash',
     headerMode: 'none'
   });
 

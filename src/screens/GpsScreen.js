@@ -28,7 +28,7 @@ export default class GpsScreen extends Component {
                 </TouchableOpacity>
             </View>
           <View style={{flex: 1}}/>
-            <View style={{alignItems: 'flex-end', justifyContent: 'center', alignItems: 'center'}}>
+            <View style={{ justifyContent: 'center', alignItems: 'center'}}>
               <View style={{width: width*0.8}}>
                 <Text style={{color: '#FFFFFF', fontSize: 40, fontWeight: '600', fontFamily: 'JosefinSans-Regular'}}>Hello John,</Text>
                 <Text style={{color: '#FFFFFF', fontSize: 40, fontWeight: '600',fontFamily: 'JosefinSans-Regular'}}>Welcome to</Text>

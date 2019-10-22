@@ -40,7 +40,7 @@ export default class Register extends Component {
                 alignItems: 'center',
                 marginVertical: 10,
                 marginTop: 50
-              }}/>
+              }} onPress={() => {this.props.navigation.navigate('GpsScreen')}}/>
               <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: 20}}>
                 <Text style={{color: '#FFFFFF', marginRight: 5, fontFamily: 'JosefinSans-Regular', fontSize: 17}}>Already
                   have an account?</Text>
